@@ -9,7 +9,7 @@
       "step": "installPlugin",
       "pluginZipFile": {
         "resource": "url",
-        "url": "https://github.com/owenwolf/demo-wordcamp-2026/raw/refs/heads/main/offline-commerce.zip"
+        "url": "https://github.com/owenwolf/demo-wordcamp-2026/raw/refs/heads/main/offline-commerce.zip?v=5"
       },
       "options": {
         "activate": true
