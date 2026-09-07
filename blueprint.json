@@ -1,0 +1,23 @@
+{
+  "landingPage": "/",
+  "preferredVersions": {
+    "php": "8.2",
+    "wp": "latest"
+  },
+  "steps": [
+    {
+      "step": "installPlugin",
+      "pluginZipFile": {
+        "resource": "url",
+        "url": "https://github.com/owenwolf/demo-wordcamp-2026/raw/refs/heads/main/offline-commerce.zip"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php wp_insert_post(['post_title' => 'Catálogo Jinotega', 'post_content' => '<!-- wp:offline-commerce {\"productName\":\"Café de Altura\",\"price\":250} /--><!-- wp:offline-commerce {\"productName\":\"Miel Orgánica\",\"price\":150} /-->', 'post_status' => 'publish']); update_option('show_on_front', 'page'); update_option('page_on_front', get_page_by_title('Catálogo Jinotega')->ID);"
+    }
+  ]
+}
